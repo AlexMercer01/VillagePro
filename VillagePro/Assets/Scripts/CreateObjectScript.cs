@@ -17,16 +17,16 @@ public class CreateObjectScript : MonoBehaviour {
 
 	}
 	public void CreateObject1 () {
-			instance = Instantiate (prefab1, new Vector3 (0, 0.6f, 0), Quaternion.identity) as GameObject;
+			instance = Instantiate (prefab1, new Vector3 (0, 0.6f, 0), new Quaternion(-90,0,0,0)) as GameObject;
 	}
 	public void CreateObject2 () {
-		instance = Instantiate (prefab2, new Vector3 (4, 0.6f, 0), Quaternion.identity) as GameObject;
+		instance = Instantiate (prefab2, new Vector3 (4, 0.6f, 0), new Quaternion(90,0,0,0)) as GameObject;
 	}
 	public void CreateObject3 () {
-		instance = Instantiate (prefab3, new Vector3 (7, 0.6f, 0), Quaternion.identity) as GameObject;
+		instance = Instantiate (prefab3, new Vector3 (7, 0.6f, 0), new Quaternion(90,0,0,0)) as GameObject;
 	}
 	public void CreateObject4 () {
-		instance = Instantiate (prefab4, new Vector3 (10, 0.6f, 0), Quaternion.identity) as GameObject;
+		instance = Instantiate (prefab4, new Vector3 (10, 0.6f, 0), new Quaternion(90,0,0,0)) as GameObject;
 	}
 }
 
