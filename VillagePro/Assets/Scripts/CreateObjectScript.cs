@@ -7,6 +7,7 @@ public class CreateObjectScript : MonoBehaviour {
 	public GameObject prefab2;
 	public GameObject prefab3;
 	public GameObject prefab4;
+    
 	// Use this for initialization
 	void Start () {
 	
@@ -17,16 +18,16 @@ public class CreateObjectScript : MonoBehaviour {
 
 	}
 	public void CreateObject1 () {
-			instance = Instantiate (prefab1, new Vector3 (0, 0.6f, 0), new Quaternion(-90,0,0,0)) as GameObject;
+			instance = Instantiate (prefab1, prefab1.transform.position, prefab1.transform.rotation) as GameObject;
 	}
 	public void CreateObject2 () {
-		instance = Instantiate (prefab2, new Vector3 (4, 0.6f, 0), new Quaternion(90,0,0,0)) as GameObject;
+        instance = Instantiate(prefab2, prefab2.transform.position, prefab2.transform.rotation) as GameObject;
 	}
 	public void CreateObject3 () {
-		instance = Instantiate (prefab3, new Vector3 (7, 0.6f, 0), new Quaternion(90,0,0,0)) as GameObject;
+        instance = Instantiate(prefab3, prefab3.transform.position, prefab3.transform.rotation) as GameObject;
 	}
 	public void CreateObject4 () {
-		instance = Instantiate (prefab4, new Vector3 (10, 0.6f, 0), new Quaternion(90,0,0,0)) as GameObject;
+        instance = Instantiate(prefab4, prefab4.transform.position, prefab4.transform.rotation) as GameObject;
 	}
 }
 
